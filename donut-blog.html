@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Delights - Your Sweet Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img src="https://images.unsplash.com/photo-1558514681-8506d527ebec?w=40&h=40&fit=crop"
+                         alt="Donut Delights Logo" class="logo-img">
+                    <h1 class="logo-text">Donut Delights</h1>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#blog" class="mobile-nav-link">Blog</a>
+                <a href="#categories" class="mobile-nav-link">Categories</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Welcome to <span class="text-pink">Donut Delights</span>
+                </h1>
+                <p class="hero-description">
+                    Discover the sweetest recipes, tips, and stories from the world of donuts.
+                    From classic glazed to innovative creations, we're your ultimate donut destination.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-pink">Explore Recipes</button>
+                    <button class="btn btn-blue-outline">Latest Posts</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Post</h2>
+                <p class="section-description">
+                    Don't miss our latest and most popular donut creation guide
+                </p>
+            </div>
+
+            <div class="featured-card">
+                <div class="featured-grid">
+                    <div class="featured-image-container">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&h=600&fit=crop"
+                             alt="The Ultimate Guide to Glazed Donuts" class="featured-image">
+                        <div class="featured-badge">Featured</div>
+                    </div>
+
+                    <div class="featured-content">
+                        <div class="category-badge blue">Classic Donuts</div>
+
+                        <h3 class="featured-title">The Ultimate Guide to Glazed Donuts</h3>
+
+                        <p class="featured-excerpt">
+                            Discover the secrets behind creating the perfect glazed donut with our step-by-step guide.
+                            From mixing the dough to achieving that glossy finish.
+                        </p>
+
+                        <div class="post-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Sarah Baker</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 15, 2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-pink">Read Full Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Blog Posts -->
+                <main class="blog-main">
+                    <section id="blog" class="blog-posts">
+                        <div class="section-header">
+                            <h2 class="section-title">Latest Blog Posts</h2>
+                            <p class="section-description">
+                                Explore our collection of donut recipes, tips, and sweet stories
+                            </p>
+                        </div>
+
+                        <div class="posts-grid">
+                            <!-- Post 1 -->
+                            <article class="post-card">
+                                <div class="post-image-container">
+                                    <img src="https://images.unsplash.com/photo-1586985564150-0337e883b9ad?w=800&h=600&fit=crop"
+                                         alt="Boston Cream: A Sweet History" class="post-image">
+                                    <div class="category-badge secondary">Donut History</div>
+                                </div>
+                                <div class="post-content">
+                                    <h3 class="post-title">Boston Cream: A Sweet History</h3>
+                                    <p class="post-excerpt">
+                                        Explore the rich history of Boston Cream donuts and learn how this beloved treat became an American classic.
+                                    </p>
+                                    <div class="post-meta-small">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Mike Johnson</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>3 min read</span>
+                                        </div>
+                                    </div>
+                                    <div class="post-footer">
+                                        <span class="post-date">
+                                            <i class="fas fa-calendar"></i>
+                                            Jan 10, 2024
+                                        </span>
+                                        <button class="btn btn-blue-outline-sm">Read More</button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 2 -->
+                            <article class="post-card">
+                                <div class="post-image-container">
+                                    <img src="https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?w=800&h=600&fit=crop"
+                                         alt="Vegan Donuts That Actually Taste Amazing" class="post-image">
+                                    <div class="category-badge secondary">Healthy Options</div>
+                                </div>
+                                <div class="post-content">
+                                    <h3 class="post-title">Vegan Donuts That Actually Taste Amazing</h3>
+                                    <p class="post-excerpt">
+                                        Who says vegan donuts can't be delicious? These plant-based recipes will change your mind about dairy-free treats.
+                                    </p>
+                                    <div class="post-meta-small">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Emma Green</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>4 min read</span>
+                                        </div>
+                                    </div>
+                                    <div class="post-footer">
+                                        <span class="post-date">
+                                            <i class="fas fa-calendar"></i>
+                                            Jan 8, 2024
+                                        </span>
+                                        <button class="btn btn-blue-outline-sm">Read More</button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 3 -->
+                            <article class="post-card">
+                                <div class="post-image-container">
+                                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&h=600&fit=crop"
+                                         alt="Decorating Donuts Like a Pro" class="post-image">
+                                    <div class="category-badge secondary">Tips & Tricks</div>
+                                </div>
+                                <div class="post-content">
+                                    <h3 class="post-title">Decorating Donuts Like a Pro</h3>
+                                    <p class="post-excerpt">
+                                        Transform ordinary donuts into works of art with these professional decorating techniques and creative toppings.
+                                    </p>
+                                    <div class="post-meta-small">
+                                        <div class="meta-item">
+                                            <i class="fas fa-user"></i>
+                                            <span>Alex Rivera</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>6 min read</span>
+                                        </div>
+                                    </div>
+                                    <div class="post-footer">
+                                        <span class="post-date">
+                                            <i class="fas fa-calendar"></i>
+                                            Jan 5, 2024
+                                        </span>
+                                        <button class="btn btn-blue-outline-sm">Read More</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </main>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- Categories -->
+                    <div class="sidebar-card">
+                        <div class="sidebar-header">
+                            <i class="fas fa-tag text-pink"></i>
+                            <h3>Categories</h3>
+                        </div>
+                        <div class="sidebar-content">
+                            <div class="category-item">
+                                <span class="category-name">Classic Donuts</span>
+                                <span class="category-count">12</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">Donut History</span>
+                                <span class="category-count">8</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">Healthy Options</span>
+                                <span class="category-count">6</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">Tips & Tricks</span>
+                                <span class="category-count">10</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">Seasonal Specials</span>
+                                <span class="category-count">4</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">International Treats</span>
+                                <span class="category-count">7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Posts -->
+                    <div class="sidebar-card">
+                        <div class="sidebar-header">
+                            <i class="fas fa-trending-up text-blue"></i>
+                            <h3>Recent Posts</h3>
+                        </div>
+                        <div class="sidebar-content">
+                            <div class="recent-post">
+                                <h4 class="recent-title">The Ultimate Guide to Glazed Donuts</h4>
+                                <span class="recent-date">
+                                    <i class="fas fa-calendar"></i>
+                                    Jan 15, 2024
+                                </span>
+                            </div>
+                            <div class="recent-post">
+                                <h4 class="recent-title">Boston Cream: A Sweet History</h4>
+                                <span class="recent-date">
+                                    <i class="fas fa-calendar"></i>
+                                    Jan 10, 2024
+                                </span>
+                            </div>
+                            <div class="recent-post">
+                                <h4 class="recent-title">Vegan Donuts That Actually Taste Amazing</h4>
+                                <span class="recent-date">
+                                    <i class="fas fa-calendar"></i>
+                                    Jan 8, 2024
+                                </span>
+                            </div>
+                            <div class="recent-post">
+                                <h4 class="recent-title">Decorating Donuts Like a Pro</h4>
+                                <span class="recent-date">
+                                    <i class="fas fa-calendar"></i>
+                                    Jan 5, 2024
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Popular Tags -->
+                    <div class="sidebar-card">
+                        <div class="sidebar-header">
+                            <i class="fas fa-tag text-blue"></i>
+                            <h3>Popular Tags</h3>
+                        </div>
+                        <div class="sidebar-content">
+                            <div class="tags-container">
+                                <span class="tag">#glazed</span>
+                                <span class="tag">#chocolate</span>
+                                <span class="tag">#cream-filled</span>
+                                <span class="tag">#vegan</span>
+                                <span class="tag">#classic</span>
+                                <span class="tag">#seasonal</span>
+                                <span class="tag">#frosting</span>
+                                <span class="tag">#sprinkles</span>
+                                <span class="tag">#jelly-filled</span>
+                                <span class="tag">#cake-donuts</span>
+                                <span class="tag">#yeast-donuts</span>
+                                <span class="tag">#baking-tips</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Have a donut recipe to share? Questions about our posts? We'd love to hear from you!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Send us a Message</h3>
+                        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                        placeholder="Tell us about your favorite donuts or ask us anything!" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-pink btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon pink">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>hello@donutdelights.com</p>
+                                <p>recipes@donutdelights.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon blue">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Sweet Street Bakery District</p>
+                                <p>Donut City, DC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon pink">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) DONUT-42</p>
+                                <p>Mon-Fri 9AM-5PM EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Donut Delights</h3>
+                    <p class="footer-description">
+                        Your go-to destination for everything donuts. From classic recipes to creative innovations,
+                        we're here to make your donut dreams come true.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Classic Donuts</a></li>
+                        <li><a href="#">Vegan Options</a></li>
+                        <li><a href="#">Seasonal Specials</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <h4 class="newsletter-title">Stay Sweet! Subscribe to Our Newsletter</h4>
+                <p class="newsletter-description">
+                    Get the latest donut recipes, baking tips, and sweet stories delivered to your inbox every week.
+                </p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button class="btn btn-pink">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2024 Donut Delights. Made with <i class="fas fa-heart text-red"></i> for donut lovers everywhere.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
