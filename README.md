@@ -3,6 +3,8 @@
 A responsive, single-page donut-themed blog and recipe site built with **HTML5**, **CSS3**, and a sprinkle of JavaScript.  
 It showcases featured posts, blog articles, categories, a contact form, and a playful design to celebrate all things donuts.
 
+Live Preview --> https://bhagya2k07.github.io/donut-blog/
+
 ---
 
 ## 📂 Project Structure
